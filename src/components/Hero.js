@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { AiFillPlayCircle } from "react-icons/ai";
 
 function Hero() {
   return (
@@ -7,8 +8,9 @@ function Hero() {
         <HeroBodyContent>
           <h1>Modern online and Offline payments for Africa</h1>
           <span>
-            Paystack helps businesses in Africa get paid by anyone, anywhere in
-            the world
+            Paystack helps businesses in Africa get paid by anyone,
+            <br />
+            anywhere in the world
           </span>
           <div>
             <button>Create a free account</button>
@@ -29,8 +31,11 @@ function Hero() {
             </Logo>
           </Logos>
           <Text>
-            <p>Watch MTN Chief Transformation Officer, Olubayo</p>
-            <p>Adekanmbi, discuss working with Paystack</p>
+            <div className="">
+              <p>Watch MTN Chief Transformation Officer, Olubayo</p>
+              <p>Adekanmbi, discuss working with Paystack</p>
+            </div>
+            <AiFillPlayCircle />
           </Text>
         </HeroFooterContent>
       </HeroFooter>
@@ -43,7 +48,7 @@ export default Hero;
 const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 180px);
+  height: calc(100vh - 100px);
   width: 100%;
 `;
 
@@ -53,15 +58,18 @@ const HeroBody = styled.div`
   justify-content: space-around;
   height: 100%;
   width: 100%;
+  margin-top: 1.7em;
 `;
 
 const HeroBodyContent = styled.div`
   letter-spacing: 1.25px;
 
   h1 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+    font-weight: 700;
     margin-bottom: 0.5em;
     max-width: 25ch;
+    font-family: "Kantumruy Pro", sans-serif;
   }
 
   span {
@@ -71,7 +79,7 @@ const HeroBodyContent = styled.div`
   }
 
   div {
-    margin-top: 1.2em;
+    margin-top: 1.4em;
 
     span {
       font-size: 0.7rem;
@@ -85,6 +93,7 @@ const HeroBodyContent = styled.div`
       background-color: var(--btnColor);
       border-radius: 5px;
       margin-right: 1em;
+      font-weight: bold;
       color: #fff;
     }
   }
@@ -92,23 +101,23 @@ const HeroBodyContent = styled.div`
 const HeroGlobalMap = styled.div``;
 const HeroFooter = styled.div`
   width: 100%;
+  margin-bottom: 1.3em;
 `;
 
 const HeroFooterContent = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 `;
 
 const Logos = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 4.5em;
-
+  margin-left: 10em;
 
   span {
     font-size: 0.7rem;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.6em;
   }
 `;
 
@@ -117,6 +126,17 @@ const Text = styled.div`
   font-size: 14px;
   font-weight: 500;
   margin-right: 12em;
+  display: flex;
+  align-items: center;
+
+  div {
+    margin-right: 0.4em;
+  }
+
+  svg {
+    color: #0ba4db;
+    font-size: 1.8em;
+  }
 
   p {
     text-align: end;

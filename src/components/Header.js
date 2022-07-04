@@ -81,14 +81,13 @@ const HeaderContainer = styled.div`
   font-size: 1.2em;
   margin: 0 auto;
   display: flex;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.4);
   position: fixed;
   right: 0;
   left: 0;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(228, 231, 226, 0.3);
-  z-index: 10;
 `;
 
 const HeaderLogo = styled.div`
@@ -108,6 +107,7 @@ const HeaderLeft = styled.div`
 const HeaderRight = styled(HeaderLeft)`
   margin-right: 1.7em;
 `;
+
 const NavBarLeft = styled.ul`
   display: flex;
   align-items: center;
@@ -115,9 +115,10 @@ const NavBarLeft = styled.ul`
 
   li {
     list-style-type: none;
-    font-size: 0.69em;
+    font-size: 0.67em;
     margin-right: 0.7em;
     color: #011b33;
+    font-weight: 500;
     cursor: pointer;
 
     div {
@@ -132,8 +133,6 @@ const NavBarLeft = styled.ul`
   }
 `;
 const NavBarRight = styled(NavBarLeft)`
-  margin-right: 2em;
-
   li {
     img {
       width: 13px;
@@ -141,11 +140,13 @@ const NavBarRight = styled(NavBarLeft)`
     }
   }
 `;
+
 const Button = styled.button`
-  padding: 0.6em 1.7em;
+  padding: 0.5em 1em;
   background-color: #3bb75e;
   border: none;
   color: #fff;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 0.78rem;
+  font-weight: bold;
 `;
