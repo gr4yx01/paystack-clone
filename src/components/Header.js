@@ -31,34 +31,90 @@ function Header() {
         </HeaderLogo>
         <NavBarLeft>
           <li>
-            <div>
+            <DropDownContainer>
               Why Paystack
               <MdArrowDropDown />
-            </div>
+              <DropDown>
+                <DropDownLeft leftRight>
+                  <div className="dropdownContent">
+                    <img src="/images/why_choose_paystack_db.svg" alt="" />
+                    <div className="dropdownText">
+                      <h3>Why Choose Paystack</h3>
+                      <span>
+                        Over 70,000 businesses trust
+                        <br />
+                        Paystack. Here's why.
+                      </span>
+                    </div>
+                  </div>
+                  <div className="dropdownContent">
+                    <img src="/images/success_rates_db.svg" alt="" />
+                    <div className="dropdownText">
+                      <h3>Success Rates</h3>
+                      <span>
+                        Get the best transaction success
+                        <br />
+                        rates in the industry
+                      </span>
+                    </div>
+                  </div>
+                  <div className="dropdownContent">
+                    <img src="/images/demo_db.svg" alt="" />
+                    <div className="dropdownText">
+                      <h3>Demo</h3>
+                      <span>
+                        See the Paystack Checkout
+                        <br />
+                        Form and Dashboard in action
+                      </span>
+                    </div>
+                  </div>
+                </DropDownLeft>
+                <DropDownRight>
+                  <div className="dropdownContent">
+                    <h4>YOUR GROWTH STAGE</h4>
+                    <div>
+                      <span>For Entrepreneurs</span>
+                      <span>For Corporates</span>
+                      <span>For Global Brands</span>
+                      <span>For Startups</span>
+                    </div>
+                  </div>
+                  <div className="dropdownContent">
+                    <h4>YOUR BUSINESS TYPE</h4>
+                    <div>
+                      <span>For Fintechs</span>
+                      <span>For Schools</span>
+                      <span>For Betting</span>
+                    </div>
+                  </div>
+                </DropDownRight>
+              </DropDown>
+            </DropDownContainer>
           </li>
           <li>Customers</li>
           <li>Pricing</li>
           <li>
-            <div>
+            <DropDownContainer>
               Learn
               <MdArrowDropDown />
-            </div>
+            </DropDownContainer>
           </li>
         </NavBarLeft>
       </HeaderLeft>
       <HeaderRight>
         <NavBarRight>
           <li>
-            <div>
+            <DropDownContainer>
               Developer
               <MdArrowDropDown />
-            </div>
+            </DropDownContainer>
           </li>
           <li>
-            <div>
+            <DropDownContainer>
               Support
               <MdArrowDropDown />
-            </div>
+            </DropDownContainer>
           </li>
           <li>Login</li>
           <li>
@@ -81,13 +137,13 @@ const HeaderContainer = styled.div`
   font-size: 1.2em;
   margin: 0 auto;
   display: flex;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.3);
   position: fixed;
   right: 0;
   left: 0;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(228, 231, 226, 0.3);
+  border-bottom: 1px solid rgba(228, 231, 226, 0.15);
 `;
 
 const HeaderLogo = styled.div`
@@ -137,6 +193,75 @@ const NavBarRight = styled(NavBarLeft)`
     img {
       width: 13px;
       height: 10px;
+    }
+  }
+`;
+
+const DropDownContainer = styled.div`
+  position: relative;
+`;
+
+const DropDown = styled.div`
+  position: absolute;
+  display: flex;
+  top: 30px;
+  width: 500px;
+  max-height: 300px;
+  background-color: #fff;
+  }
+`;
+
+const DropDownLeft = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  padding: 1.5em;
+  border-right: ${(props) =>
+    props.leftRight ? "1px solid rgba(0, 0, 0, 0.3)" : ""};
+
+  img {
+    width: 30px;
+    margin-right: 0.9em;
+  }
+
+  .dropdownContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.9em;
+    width: 100%;
+  }
+
+  .dropdownText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`;
+
+const DropDownRight = styled.div`
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.3em;
+  flex: 4;
+  
+  .dropdownContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    h4 {
+      margin: 0.4em 0;
+      color: gray;
+      font-size: 0.7em;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
     }
   }
 `;
