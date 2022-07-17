@@ -4,6 +4,11 @@ import { BiChevronRightCircle } from "react-icons/bi";
 import { AiFillFacebook, AiFillLinkedin } from "react-icons/ai";
 import { BsTwitter, BsInstagram } from "react-icons/bs";
 import { FaYoutubeSquare } from "react-icons/fa";
+import Zoom from "react-reveal/Zoom";
+import Slide from "react-reveal/Slide";
+import Flip from "react-reveal/Flip";
+import Jump from "react-reveal/Jump";
+import Fade from "react-reveal/Fade";
 
 function Body() {
   return (
@@ -15,126 +20,138 @@ function Body() {
       {/* C-feature */}
       <CFeature>
         <CFeatureLeft>
-          <img
-            src="/images/Collect-Payments-for-Multiple-Channels-1.1.gif"
-            alt=""
-          />
+          <Slide left>
+            <img
+              src="/images/Collect-Payments-for-Multiple-Channels-1.1.gif"
+              alt=""
+            />
+          </Slide>
         </CFeatureLeft>
         <CFeatureRight>
           <CFeatureText>
-            <div className="cfeature-text">
-              <h1>
-                Delight customers with a <br />
-                seamless payments
-                <br />
-                experience
-              </h1>
-              <p>
-                Give your customers the gift of modern, frictionless,
-                <br /> painless payments. Integrate Paystack once and let your
-                <br /> customers pay you however they want.
-              </p>
-            </div>
+            <Slide right>
+              <div className="cfeature-text">
+                <h1>
+                  Delight customers with a <br />
+                  seamless payments
+                  <br />
+                  experience
+                </h1>
+                <p>
+                  Give your customers the gift of modern, frictionless,
+                  <br /> painless payments. Integrate Paystack once and let your
+                  <br /> customers pay you however they want.
+                </p>
+              </div>
+            </Slide>
             <AvailablePlatform>
-              <div className="mark">
-                <TiTick />
-                <span>Card</span>
-              </div>
-              <div className="mark">
-                <TiTick />
-                <span>Bank Account</span>
-              </div>
-              <div className="mark">
-                <TiTick />
-                <span>Bank Transfer</span>
-              </div>
-              <div className="mark">
-                <TiTick />
-                <span>USSD</span>
-              </div>
-              <div className="mark">
-                <TiTick />
-                <span>Apple Pay</span>
-              </div>
-              <div className="mark">
-                <TiTick />
-                <span>Visa QR</span>
-              </div>
-              <div className="mark">
-                <TiTick />
-                <span>Mobile Money</span>
-              </div>
-              <div className="mark">
-                <TiTick />
-                <span>POS(Coming soon)</span>
-              </div>
+              <Slide bottom>
+                <div className="mark">
+                  <TiTick />
+                  <span>Card</span>
+                </div>
+                <div className="mark">
+                  <TiTick />
+                  <span>Bank Account</span>
+                </div>
+                <div className="mark">
+                  <TiTick />
+                  <span>Bank Transfer</span>
+                </div>
+                <div className="mark">
+                  <TiTick />
+                  <span>USSD</span>
+                </div>
+                <div className="mark">
+                  <TiTick />
+                  <span>Apple Pay</span>
+                </div>
+                <div className="mark">
+                  <TiTick />
+                  <span>Visa QR</span>
+                </div>
+                <div className="mark">
+                  <TiTick />
+                  <span>Mobile Money</span>
+                </div>
+                <div className="mark">
+                  <TiTick />
+                  <span>POS(Coming soon)</span>
+                </div>
+              </Slide>
             </AvailablePlatform>
-            <div className="cfeature-text">
-              <h1>
-                Enjoy Phenomenal
-                <br />
-                transaction success rates
-              </h1>
-              <p>
-                We automatically route payments through the most
-                <br />
-                optimal channels, ensuring the highest transaction
-                <br />
-                success rates in the market.
-              </p>
-            </div>
-            <div className="direction">
-              <BiChevronRightCircle />
-              <span>Find out how we achieve high success rates</span>
-            </div>
+            <Jump>
+              <div className="cfeature-text">
+                <h1>
+                  Enjoy Phenomenal
+                  <br />
+                  transaction success rates
+                </h1>
+                <p>
+                  We automatically route payments through the most
+                  <br />
+                  optimal channels, ensuring the highest transaction
+                  <br />
+                  success rates in the market.
+                </p>
+              </div>
+              <div className="direction">
+                <BiChevronRightCircle />
+                <span>Find out how we achieve high success rates</span>
+              </div>
+            </Jump>
           </CFeatureText>
         </CFeatureRight>
       </CFeature>
       <CFeature>
         <CFeatureLeft>
           <CFeatureText>
-            <div className="cfeature-text">
-              <h1>
-                Build custom payments
-                <br />
-                experiences with well-
-                <br />
-                documented APIs
-              </h1>
-              <p>
-                Developers love our thorough, well-documented APIs
-                <br />
-                that let you to build everything from simple weekend
-                <br />
-                projects, to complex financial products serving hundred
-                <br />
-                of thousands of customers. If you can imagine it, you can
-                <br />
-                build it with Paystack.
-              </p>
-            </div>
-            <AvailablePlatformNonGrid>
-              <div className="mark">
-                <TiTick />
-                <span>
-                  Collect one-time and recurring payments from your app
+            <Slide left>
+              <div className="cfeature-text">
+                <h1>
+                  Build custom payments
                   <br />
-                  or website
-                </span>
+                  experiences with well-
+                  <br />
+                  documented APIs
+                </h1>
+                <p>
+                  Developers love our thorough, well-documented APIs
+                  <br />
+                  that let you to build everything from simple weekend
+                  <br />
+                  projects, to complex financial products serving hundred
+                  <br />
+                  of thousands of customers. If you can imagine it, you can
+                  <br />
+                  build it with Paystack.
+                </p>
               </div>
-              <div className="mark">
-                <TiTick />
-                <span>Make instant transfers</span>
-              </div>
-              <div className="mark">
-                <TiTick />
-                <span>Retrieve all your transaction and customer data</span>
-              </div>
-              <div className="mark">
-                <TiTick />
-                <span>Retrieve all your transaction and customer data</span>
-              </div>
-            </AvailablePlatformNonGrid>
+            </Slide>
+            <Slide bottom>
+              <AvailablePlatformNonGrid>
+                <div className="mark">
+                  <TiTick />
+                  <span>
+                    Collect one-time and recurring payments from your app
+                    <br />
+                    or website
+                  </span>
+                </div>
+                <div className="mark">
+                  <TiTick />
+                  <span>Make instant transfers</span>
+                </div>
+                <div className="mark">
+                  <TiTick />
+                  <span>Retrieve all your transaction and customer data</span>
+                </div>
+                <div className="mark">
+                  <TiTick />
+                  <span>Retrieve all your transaction and customer data</span>
+                </div>
+              </AvailablePlatformNonGrid>
+            </Slide>
             <div className="direction">
               <BiChevronRightCircle />
               <span>Paystack API Quickstart</span>
@@ -142,52 +159,58 @@ function Body() {
           </CFeatureText>
         </CFeatureLeft>
         <CFeatureRight>
-          <img src="/images/Robust-Suite-of-APIs-Opt.png" alt="" />
+          <Slide right>
+            <img src="/images/Robust-Suite-of-APIs-Opt.png" alt="" />
+          </Slide>
         </CFeatureRight>
       </CFeature>
       <CFeature>
         <CFeatureLeft>
-          <video loop js-play>
-            <source
-              src="/images/Advanced-Fraud-Protection.mp4"
-              type="video/mp4"
-            />
-          </video>
+          <Slide left>
+            <video width="320" height="440" auto-play loop muted playsInline>
+              <source
+                src="/images/Advanced-Fraud-Protection.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </Slide>
         </CFeatureLeft>
         <CFeatureRight>
           <CFeatureText>
-            <div className="cfeature-text">
-              <h1>
-                Protect yourself and your
-                <br />
-                customers with advanced
-                <br />
-                fraud detection
-              </h1>
-              <p>
-                Paystack's combination of automated and manual fraud
-                <br />
-                systems protect you from fraudulent transactions and
-                <br />
-                associated chargeback claims.
-              </p>
-            </div>
-            <div className="cfeature-text">
-              <h1>
-                Detailed reporting for
-                <br />
-                accounting reconciliation,
-                <br />
-                and audits
-              </h1>
-              <p>
-                Understand your customers' purchase patterns and do
-                <br />
-                easy reconciliations with a robust data Dashboard and
-                <br />
-                easy exports.
-              </p>
-            </div>
+            <Slide right>
+              <div className="cfeature-text">
+                <h1>
+                  Protect yourself and your
+                  <br />
+                  customers with advanced
+                  <br />
+                  fraud detection
+                </h1>
+                <p>
+                  Paystack's combination of automated and manual fraud
+                  <br />
+                  systems protect you from fraudulent transactions and
+                  <br />
+                  associated chargeback claims.
+                </p>
+              </div>
+              <div className="cfeature-text">
+                <h1>
+                  Detailed reporting for
+                  <br />
+                  accounting reconciliation,
+                  <br />
+                  and audits
+                </h1>
+                <p>
+                  Understand your customers' purchase patterns and do
+                  <br />
+                  easy reconciliations with a robust data Dashboard and
+                  <br />
+                  easy exports.
+                </p>
+              </div>
+            </Slide>
           </CFeatureText>
         </CFeatureRight>
       </CFeature>
@@ -208,71 +231,77 @@ function Body() {
           </CSectionText>
           <CSectionCardContainer>
             <CSectionCard>
-              <img
-                src="/images/For-International-Businesses_180823_165939.svg"
-                alt=""
-              />
-              <div className="cSectionCardText">
-                <h2>
-                  Paystack for
-                  <br />
-                  Global Brands
-                </h2>
-                <p>
-                  We help global brands accept payments
-                  <br />
-                  from across Africa
-                </p>
-              </div>
-              <div className="direction">
-                <BiChevronRightCircle />
-                <span>Learn More</span>
-              </div>
+              <Flip top>
+                <img
+                  src="/images/For-International-Businesses_180823_165939.svg"
+                  alt=""
+                />
+                <div className="cSectionCardText">
+                  <h2>
+                    Paystack for
+                    <br />
+                    Global Brands
+                  </h2>
+                  <p>
+                    We help global brands accept payments
+                    <br />
+                    from across Africa
+                  </p>
+                </div>
+                <div className="direction">
+                  <BiChevronRightCircle />
+                  <span>Learn More</span>
+                </div>
+              </Flip>
             </CSectionCard>
             <CSectionCard>
-              <img src="/images/For-Entrepreneurs_180823_165709.svg" alt="" />
-              <div className="cSectionCardText">
-                <h2>
-                  Paystack for
-                  <br />
-                  Entrepreneurs
-                </h2>
-                <p>
-                  From startup to scale-up, we can support
-                  <br />
-                  you at every stage of your businesses
-                  <br />
-                  growth
-                </p>
-              </div>
-              <div className="direction">
-                <BiChevronRightCircle />
-                <span>Learn More</span>
-              </div>
+              <Flip bottom>
+                <img src="/images/For-Entrepreneurs_180823_165709.svg" alt="" />
+                <div className="cSectionCardText">
+                  <h2>
+                    Paystack for
+                    <br />
+                    Entrepreneurs
+                  </h2>
+                  <p>
+                    From startup to scale-up, we can support
+                    <br />
+                    you at every stage of your businesses
+                    <br />
+                    growth
+                  </p>
+                </div>
+                <div className="direction">
+                  <BiChevronRightCircle />
+                  <span>Learn More</span>
+                </div>
+              </Flip>
             </CSectionCard>
             <CSectionCard>
-              <img
-                src="/images/For-Large-Corporations_180823_165502.svg"
-                alt=""
-              />
-              <div className="cSectionCardText">
-                <h2>
-                  Paystack for
-                  <br />
-                  Large Organizations
-                </h2>
-                <p>
-                  Paystack helps many of the largest
-                  <br />
-                  corporate and government organizations in
-                  <br />
-                  Nigeria get paid quickly and securely.
-                </p>
-              </div>
-              <div className="direction">
-                <BiChevronRightCircle />
-                <span>Learn More</span>
-              </div>
+              <Flip top>
+                <img
+                  src="/images/For-Large-Corporations_180823_165502.svg"
+                  alt=""
+                />
+                <div className="cSectionCardText">
+                  <h2>
+                    Paystack for
+                    <br />
+                    Large Organizations
+                  </h2>
+                  <p>
+                    Paystack helps many of the largest
+                    <br />
+                    corporate and government organizations in
+                    <br />
+                    Nigeria get paid quickly and securely.
+                  </p>
+                </div>
+                <div className="direction">
+                  <BiChevronRightCircle />
+                  <span>Learn More</span>
+                </div>
+              </Flip>
             </CSectionCard>
           </CSectionCardContainer>
         </CSectionContainer>
@@ -293,22 +322,37 @@ function Body() {
           </p>
         </PartnerShipText>
         <PartnerShips>
-          <img src="/images/Air-Peace-Stack-Blue_200305_154114.svg" alt="" />
-          <img src="/images/FilmHouse-Stack-Blue_200304_153641.svg" alt="" />
+          <Flip top>
+            <img src="/images/Air-Peace-Stack-Blue_200305_154114.svg" alt="" />
+          </Flip>
+          <Flip top>
+            <img src="/images/FilmHouse-Stack-Blue_200304_153641.svg" alt="" />
+          </Flip>
           <img src="/images/Piggyvest-Stack-Blue_200304_153734.svg" alt="" />
           <img src="/images/Ibom-Air-Stack-Blue_200304_154259.svg" alt="" />
-          <img src="/images/kuda-Stack-Blue_200304_154345.svg" alt="" />
+          <Flip bottom>
+            <img src="/images/kuda-Stack-Blue_200304_154345.svg" alt="" />
+          </Flip>
           <img src="/images/Ariiya-Stack-Blue_200304_155307.svg" alt="" />
           <img src="/images/Dominos-Plain.svg" alt="" />
           <img src="/images/MTN-Plain.svg" alt="" />
-          <img src="/images/Lagos-Internal-Revenue-Service.svg" alt="" />
+          <Flip bottom>
+            <img src="/images/Lagos-Internal-Revenue-Service.svg" alt="" />
+          </Flip>
           <img src="/images/Bolt-Stack-Blue_200304_153027.svg" alt="" />
           <img src="/images/Betway-Plain.svg" alt="" />
-          <img src="/images/carbon-dark.svg" alt="" />
-          <img src="/images/Axa-mansard-_-Plain.svg" alt="" />
+          <Flip top>
+            <img src="/images/carbon-dark.svg" alt="" />
+          </Flip>
+          <Flip top>
+            <img src="/images/Axa-mansard-_-Plain.svg" alt="" />
+          </Flip>
           <img src="/images/Abia-State-University.svg" alt="" />
-          <img src="/images/GIGM-Plain_180827_172142.svg" alt="" />
+          <Flip top>
+            <img src="/images/GIGM-Plain_180827_172142.svg" alt="" />
+          </Flip>
           <img src="/images/IrokoTV-Plain.svg" alt="" />
+
           <img src="/images/Smile-Plain_180827_172218.svg" alt="" />
           <img src="/images/Cowrywise-dark.svg" alt="" />
         </PartnerShips>
@@ -401,11 +445,13 @@ function Body() {
       <PaymentCallToActionSectionContainer>
         <PaymentCallToActionPattern />
         <PaymentCallToActionContainer>
-          <div className="text">
-            <span>Try Paystack Now</span>
-            <h2>Start accepting payments in just 30 minutes</h2>
-          </div>
-          <button>Create a free account</button>
+          <Fade bottom>
+            <div className="text">
+              <span>Try Paystack Now</span>
+              <h2>Start accepting payments in just 30 minutes</h2>
+            </div>
+            <button>Create a free account</button>
+          </Fade>
         </PaymentCallToActionContainer>
       </PaymentCallToActionSectionContainer>
 
@@ -586,6 +632,7 @@ export default Body;
 const BodyContainer = styled.div`
   display: flex;
   flex-direction: column;
+  z-index: -1;
 
   h2 {
     font-size: 2.5rem;
@@ -969,9 +1016,9 @@ const FooterContainer = styled.div`
 `;
 
 const FooterTop = styled.div`
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
   width: 70%;
 
   .column {
@@ -1013,7 +1060,7 @@ const FooterTop = styled.div`
 `;
 
 const FooterHr = styled.hr`
-  width: 65%;
+  width: 70%;
   margin: 2.2em 0;
   border: none;
   background-color: lightgray;
@@ -1022,7 +1069,14 @@ const FooterHr = styled.hr`
 `;
 
 const FooterBottom = styled(FooterTop)`
-  background-color: blue;
+  .column {
+    div {
+      p {
+        font-size: 0.9em;
+      }
+    }
+  }
+
   .first-column {
     div {
       a {
@@ -1034,13 +1088,13 @@ const FooterBottom = styled(FooterTop)`
 
       .social-media {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         margin-top: 0.5em;
 
         svg {
           color: gray;
-          font-size: 18px;
+          font-size: 15px;
+          margin-right: 1em;
         }
       }
     }
@@ -1048,10 +1102,9 @@ const FooterBottom = styled(FooterTop)`
 
   .second-column {
     .contact {
-      font-size: 0.8em;
+      font-size: 0.75em;
       text-decoration: none;
       color: #0ba4db;
-      margin-top: 1.2em;
     }
 
     div:nth-child(2) {
